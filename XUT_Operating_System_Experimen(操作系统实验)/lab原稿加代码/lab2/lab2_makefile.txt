@@ -1,0 +1,8 @@
+#this is  make file
+main.out:
+        max.o min.o main.c -o main.out
+        gcc max.o min.o main.c #tab间隔
+max.o:max.c
+        gcc -c max.c  -o max.o
+min.o:min.c
+        gcc -c min.c -o min.c
